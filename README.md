@@ -21,16 +21,17 @@ Use da seguinte maneira:
 
 
 ###
-       String cep = "29032808";     
+       String cep = "21909302";       
        String endereco = BuscaCEP.getEndereco(cep);
        String bairro = BuscaCEP.getBairro(cep);
        String cidade = BuscaCEP.getCidade(cep);
        String uf = BuscaCEP.getUF(cep);
+       String coords = BuscaCEP.getLatLong(cep);
        
        System.out.println(endereco);
        System.out.println(cidade);
        System.out.println(bairro);
        System.out.println(uf);
-       System.out.println(BuscaCEP.getLatLong(cep));
+       System.out.println(coords);
 ###
 Wanderlei Silva do Carmo <Wander.silva@gmail.com>
