@@ -15,10 +15,13 @@ Para usar simplesmete copie o jar da pasta lib para a bibliotecas de seu sistema
 
 Com esta classe você pode implementar um mapa obtendo as coordenadas com método getLatLng(cep) e enviando como parâmetro para o google maps.
 
-###
+# Exemplo de uma implimentação:
+
 Use da seguinte maneira:
-       String cep = "29032808";
-       
+
+
+###
+       String cep = "29032808";     
        String endereco = BuscaCEP.getEndereco(cep);
        String bairro = BuscaCEP.getBairro(cep);
        String cidade = BuscaCEP.getCidade(cep);
