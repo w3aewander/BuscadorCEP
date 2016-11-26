@@ -15,7 +15,7 @@ Para usar simplesmete copie o jar da pasta lib para a bibliotecas de seu sistema
 
 Com esta classe você pode implementar um mapa obtendo as coordenadas com método getLatLng(cep) e enviando como parâmetro para o google maps.
 
-# Exemplo de uma implimentação:
+# Exemplo de uma implementação:
 
 Use da seguinte maneira:
 
