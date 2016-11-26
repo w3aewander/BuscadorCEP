@@ -8,6 +8,7 @@ package br.com.wander.buscadorcep.teste;
 import br.com.wander.buscadorcep.BuscaCEP;
 import org.junit.Test;
 import java.io.IOException;
+import org.json.simple.parser.ParseException;
 import org.junit.Assert;
 /**
  *
@@ -19,7 +20,7 @@ public class BuscadorCEP_Test {
     }
 
     @Test
-    public void  deveRetornarEndereco() throws IOException{
+    public void  deveRetornarEndereco() throws IOException, ParseException{
        String cep = "29032808";
        
        String endereco = BuscaCEP.getEndereco(cep);
@@ -31,6 +32,7 @@ public class BuscadorCEP_Test {
        System.out.println(cidade);
        System.out.println(bairro);
        System.out.println(uf);
+       System.out.println(BuscaCEP.getLatLong(cep));
        Assert.assertTrue("Validando endereço: ", endereco.equals("Rua João Dentuski"));
        Assert.assertTrue("Validando bairro: ", bairro.equals("Redenção"));
        Assert.assertTrue("Validando cidade: ", cidade.equals("Vitória"));

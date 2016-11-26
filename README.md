@@ -13,5 +13,5 @@ Transformei os métodos em static para facilitar a obtenção da informação.
 
 Para usar simplesmete copie o jar da pasta lib para a bibliotecas de seu sistema.
 
-
+Com esta classe você pode implementar um mapa obtendo as coordenadas com método getLatLng(cep) e enviando como parâmetro para o google maps.
 Wanderlei Silva do Carmo <Wander.silva@gmail.com>
